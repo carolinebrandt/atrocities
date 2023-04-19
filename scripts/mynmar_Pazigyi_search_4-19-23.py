@@ -48,7 +48,7 @@ def main():
         with open('myan_april_2023.json', 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
         json_data = json.dumps(data)
-        s3.put_object(Body=json_data, Bucket='myan', Key='myan_april_2023.json')
+        s3.put_object(Body=json_data, Bucket='myan2023', Key='myan_april_2023.json')
 
 
 if __name__ == "__main__":
